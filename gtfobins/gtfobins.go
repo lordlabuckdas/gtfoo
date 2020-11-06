@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func init() {
-	fmt.Println("GTFOBins module file")
+func Greet(name string) string {
+	return fmt.Sprintf("Hi, %v", name)
 }
