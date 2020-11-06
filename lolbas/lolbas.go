@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func init() {
-	fmt.Println("LOLBAS module file")
+func Hello(name string) string {
+	return fmt.Sprintf("Hello, %v", name)
 }
