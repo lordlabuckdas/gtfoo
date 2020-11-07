@@ -6,7 +6,8 @@ go program to fetch gtfobins and lolbas
 
 ```
 $ git clone https://github.com/lordlabuckdas/gtfoo.git && cd gtfoo
-$ go run main.go
+$ go build -ldflags="-s -w" main.go
+$ ./main <args>
 ```
 
 ## note
