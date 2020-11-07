@@ -8,15 +8,17 @@ import (
 	"github.com/lordlabuckdas/gtfoo/lolbas"
 )
 
-var gtfoSearch, lolbasSearch *string
+var gtfoSearch, lolbasSearch string
 
 func init() {
-	gtfoSearch = flag.String("g", "", "enter binary to be searched in gtfobins")
-	lolbasSearch = flag.String("l", "", "enter binary to be searched in lolbas")
+	flag.StringVar(&gtfoSearch, "gtfo", "", "gtfobin search term")
+	flag.StringVar(&gtfoSearch, "g", "", "gtfobin search term (shorthand flag)")
+	flag.StringVar(&lolbasSearch, "lolbas", "", "lolbas search term")
+	flag.StringVar(&lolbasSearch, "l", "", "lolbas search term (shorthand flag)")
 	flag.Parse()
 }
 
 func main() {
-	fmt.Println(gtfobins.Greet(*gtfoSearch))
-	fmt.Println(lolbas.Hello(*lolbasSearch))
+	fmt.Println(gtfobins.Greet(gtfoSearch))
+	fmt.Println(lolbas.Hello(lolbasSearch))
 }
