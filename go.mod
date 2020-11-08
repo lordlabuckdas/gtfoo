@@ -5,6 +5,7 @@ go 1.15
 replace (
 	github.com/lordlabuckdas/gtfoo/gtfobins => ./gtfobins
 	github.com/lordlabuckdas/gtfoo/lolbas => ./lolbas
+	github.com/lordlabuckdas/gtfoo/utils => ./utils
 )
 
 require (
