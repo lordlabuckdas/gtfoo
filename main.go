@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/lordlabuckdas/gtfoo/gtfobins"
-	"github.com/lordlabuckdas/gtfoo/lolbas"
 )
 
 var gtfoSearch, lolbasSearch string
@@ -20,5 +19,4 @@ func init() {
 
 func main() {
 	fmt.Println(gtfobins.Greet(gtfoSearch))
-	fmt.Println(lolbas.Hello(lolbasSearch))
 }
