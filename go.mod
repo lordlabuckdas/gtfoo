@@ -7,6 +7,4 @@ replace (
 	github.com/lordlabuckdas/gtfoo/utils => ./utils
 )
 
-require (
-	github.com/lordlabuckdas/gtfoo/gtfobins v0.0.0-00010101000000-000000000000
-)
+require github.com/lordlabuckdas/gtfoo/gtfobins v0.0.0-00010101000000-000000000000
