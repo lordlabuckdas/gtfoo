@@ -1,5 +1,5 @@
-[] I ran `go fmt ./...`
+* [ ] I ran `go fmt ./...`
 
-[] I ran `go mod tidy ./...`
+* [ ] I ran `go mod tidy ./...`
 
-[] I followed **camelCase** and **PascalCase**
+* [ ] I followed **camelCase** and **PascalCase**
