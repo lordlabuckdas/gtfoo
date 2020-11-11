@@ -1,6 +1,6 @@
 package gtfobins
 
-var baseURL = "https://raw.githubusercontent.com/GTFOBins/GTFOBins.github.io/master/_gtfobins/" 
+var baseURL = "https://raw.githubusercontent.com/GTFOBins/GTFOBins.github.io/master/_gtfobins/%s.md"
 
 type function struct {
 	Description string `yaml:"description,omitempty"`
@@ -27,7 +27,8 @@ type gtfoStruct struct {
 	} `yaml:"functions"`
 }
 
-var funcDesc = map[string]string{"Shell": "It can be used to break out from restricted environments by spawning an interactive system shell.",
+var funcDesc = map[string]string{
+	"Shell":                         "It can be used to break out from restricted environments by spawning an interactive system shell.",
 	"Command":                       "It can be used to break out from restricted environments by running non-interactive system commands.",
 	"Reverse shell":                 "It can send back a reverse shell to a listening attacker to open a remote network access.",
 	"Non-interactive reverse shell": "It can send back a non-interactive reverse shell to a listening attacker to open a remote network access.",
@@ -41,4 +42,5 @@ var funcDesc = map[string]string{"Shell": "It can be used to break out from rest
 	"SUID":                          "If the binary has the SUID bit set, it does not drop the elevated privileges and may be exploited to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run `sh -p`, omit the `-p` argument on systems like Debian (<= Stretch) that allow the default `sh` shell to run with SUID privileges.\nThis example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To exploit an existing SUID binary skip the first command and run the program using its original path.",
 	"Sudo":                          "If the binary is allowed to run as superuser by `sudo`, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access.",
 	"Capabilities":                  "If the binary has the Linux `CAP_SETUID` capability set or it is executed by another binary with the capability set, it can be used as a backdoor to maintain privileged access by manipulating its own process UID.",
-	"Limited SUID":                  "If the binary has the SUID bit set, it may be exploited to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via `system()`-like invocations) it only works on systems like Debian (<= Stretch) that allow the default `sh` shell to run with SUID privileges.\nThis example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To exploit an existing SUID binary skip the first command and run the program using its original path."}
+	"Limited SUID":                  "If the binary has the SUID bit set, it may be exploited to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via `system()`-like invocations) it only works on systems like Debian (<= Stretch) that allow the default `sh` shell to run with SUID privileges.\nThis example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To exploit an existing SUID binary skip the first command and run the program using its original path.",
+}
