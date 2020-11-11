@@ -19,4 +19,5 @@ func init() {
 
 func main() {
 	fmt.Println(gtfobins.Greet(gtfoSearch))
+	gtfobins.GtfobinMain(gtfoSearch)
 }
