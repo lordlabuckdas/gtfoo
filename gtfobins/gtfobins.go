@@ -10,29 +10,25 @@ import (
 )
 
 func getExploit(name string) gtfoStruct {
+	url := fmt.Sprintf(baseURL, name)
 
-	url := baseURL + name + ".md"
-
-	resp, err1 := http.Get(url)
-	if err1 != nil {
-		fmt.Printf("Error fetching data : %s\n", err1)
+	resp, err := http.Get(url)
+	if err != nil {
+		fmt.Printf("Error fetching data : %s\n", err)
 	}
 	defer resp.Body.Close()
 
-	body, err2 := ioutil.ReadAll(resp.Body)
-
-	if err2 != nil {
-		fmt.Printf("Error reading data : %s\n", err2)
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Printf("Error reading data : %s\n", err)
 	}
 
 	var gtfoExploit gtfoStruct
-	err3 := yaml.Unmarshal(body, &gtfoExploit)
-	if err3 != nil {
-		fmt.Printf("Error parsing YAML file: %s\n", err3)
+	err = yaml.Unmarshal(body, &gtfoExploit)
+	if err != nil {
+		fmt.Printf("Error parsing YAML file: %s\n", err)
 	}
-
 	return gtfoExploit
-
 }
 
 func Greet(name string) string {
@@ -40,26 +36,18 @@ func Greet(name string) string {
 }
 
 func GtfobinMain(name string) {
-
 	exploit := getExploit(name)
-
-	
 	//right now only the sudo function is printed
-	fmt.Printf("\n\n%s\n",funcDesc["Sudo"])
+	fmt.Printf("\n\n%s\n", funcDesc["Sudo"])
 
 	for i := 0; i < len(exploit.Functions.Sudo); i++ {
-
 		fmt.Printf("\n")
-
 		if exploit.Functions.Sudo[i].Description != "" {
 			fmt.Printf("Description : %s\n", exploit.Functions.Sudo[i].Description)
 		}
-
 		if exploit.Functions.Sudo[i].Code != "" {
 			fmt.Printf("Code : %s\n", exploit.Functions.Sudo[i].Code)
 		}
-
 		fmt.Printf("\n")
 	}
-
 }
