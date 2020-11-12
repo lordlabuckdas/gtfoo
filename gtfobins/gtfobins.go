@@ -3,9 +3,9 @@ package gtfobins
 import (
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 
-	"github.com/lordlabuckdas/gtfoo/utils"
 	"gopkg.in/yaml.v2"
 )
 
@@ -14,25 +14,21 @@ func getExploit(name string) gtfoStruct {
 
 	resp, err := http.Get(url)
 	if err != nil {
-		fmt.Printf("Error fetching data : %s\n", err)
+		log.Fatalf("Error fetching data : %s\n", err)
 	}
 	defer resp.Body.Close()
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Printf("Error reading data : %s\n", err)
+		log.Fatalf("Error reading data : %s\n", err)
 	}
 
 	var gtfoExploit gtfoStruct
 	err = yaml.Unmarshal(body, &gtfoExploit)
 	if err != nil {
-		fmt.Printf("Error parsing YAML file: %s\n", err)
+		log.Fatalf("Error parsing YAML file: %s\n", err)
 	}
 	return gtfoExploit
-}
-
-func Greet(name string) string {
-	return fmt.Sprintf("%sHi, %v%s", utils.ColorBlue, name, utils.ColorReset)
 }
 
 func GtfobinMain(name string) {
