@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 
 	"github.com/lordlabuckdas/gtfoo/gtfobins"
 )
@@ -18,6 +17,5 @@ func init() {
 }
 
 func main() {
-	fmt.Println(gtfobins.Greet(gtfoSearch))
 	gtfobins.GtfobinMain(gtfoSearch)
 }
