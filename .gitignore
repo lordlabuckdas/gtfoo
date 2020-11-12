@@ -1,2 +1,6 @@
-# to prevent accidental inclusion of binary file to git repo
+# binary file
 main
+
+# log files
+logs.txt
+
