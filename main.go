@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"flag"
 
 	"github.com/lordlabuckdas/gtfoo/gtfobins"
@@ -18,4 +19,5 @@ func init() {
 
 func main() {
 	gtfobins.GtfobinMain(gtfoSearch)
+	fmt.Printf("\n%s", gtfobins.Sudo())
 }
