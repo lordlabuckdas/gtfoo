@@ -1,32 +1,32 @@
 package gtfobins
 
 const (
-	COLOR_RESET  = "\033[0m"
-	COLOR_RED    = "\033[31m"
-	COLOR_GREEN  = "\033[32m"
-	COLOR_YELLOW = "\033[33m"
-	COLOR_BLUE   = "\033[34m"
-	COLOR_PURPLE = "\033[35m"
-	COLOR_CYAN   = "\033[36m"
-	COLOR_WHITE  = "\033[37m"
-	SHELL        = "Shell"
-	COMMAND      = "Command"
-	R_SHELL      = "Reverse Shell"
-	NI_R_SHELL   = "Non-Interactive Reverse Shell"
-	B_SHELL      = "Bind Shell"
-	NI_B_SHELL   = "Non-Interactive Bind Shell"
-	F_UPLOAD     = "File Upload"
-	F_DOWNLOAD   = "File Download"
-	F_WRITE      = "File Write"
-	F_READ       = "File Read"
-	LIBRARY_LOAD = "Library Load"
-	SUID         = "SUID"
-	SUDO         = "Sudo"
-	CAPABILITIES = "Capabilities"
-	LIM_SUID     = "Limited SUID"
+	colorReset      = "\033[0m"
+	colorRed        = "\033[31m"
+	colorGreen      = "\033[32m"
+	colorYellow     = "\033[33m"
+	colorBlue       = "\033[34m"
+	colorPurple     = "\033[35m"
+	colorCyan       = "\033[36m"
+	colorWhite      = "\033[37m"
+	shell           = "Shell"
+	cmd             = "Command"
+	revShell        = "Reverse Shell"
+	nonIntRevShell  = "Non-Interactive Reverse Shell"
+	bindShell       = "Bind Shell"
+	nonIntBindShell = "Non-Interactive Bind Shell"
+	fileUpload      = "File Upload"
+	fileDownload    = "File Download"
+	fileWrite       = "File Write"
+	fileRead        = "File Read"
+	libLoad         = "Library Load"
+	suid            = "SUID"
+	sudo            = "Sudo"
+	capab           = "Capabilities"
+	limSUID         = "Limited SUID"
 )
 
-var baseURL = "https://raw.githubusercontent.com/GTFOBins/GTFOBins.github.io/master/_gtfobins/%s.md"
+var baseURL = "https://raw.githubusercontent.com/GTFOBins/GTFOBins.github.io/master/_gtfobins/"
 
 type function struct {
 	Description string `yaml:"description,omitempty"`
@@ -46,7 +46,7 @@ type gtfoStruct struct {
 		FileWrite                  []function `yaml:"file-write"`
 		FileRead                   []function `yaml:"file-read"`
 		LibraryLoad                []function `yaml:"library-load"`
-		Suid                       []function `yaml:"suid"`
+		SUID                       []function `yaml:"suid"`
 		Sudo                       []function `yaml:"sudo"`
 		Capabilities               []function `yaml:"capabilities"`
 		LimitedSuid                []function `yaml:"limited-suid"`
