@@ -14,6 +14,13 @@ var (
 	versionFlag bool
 )
 
+const banner = 
+`░█▀▀░▀█▀░█▀▀░█▀█░█▀█
+░█░█░░█░░█▀▀░█░█░█░█
+░▀▀▀░░▀░░▀░░░▀▀▀░▀▀▀
+
+by 7phalange7 and lordlabuckdas`
+
 func init() {
 	flag.StringVar(&gtfoSearch, "gtfo", "", "gtfobin query")
 	flag.StringVar(&gtfoSearch, "g", "", "gtfobin query (shorthand flag)")
@@ -22,8 +29,8 @@ func init() {
 	// flag.StringVar(&lolbasSearch, "lolbas", "", "lolbas search term")
 	// flag.StringVar(&lolbasSearch, "l", "", "lolbas search term (shorthand flag)")
 	flag.Usage = func() {
-		// @7phalange, insert logo here
-		fmt.Fprintf(os.Stderr, "Usage: %s [options] [query]\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, "\n%s\n",banner)
+		fmt.Fprintf(os.Stderr, "\nUsage: %s [options] [query]\n", os.Args[0])
 		fmt.Fprintf(os.Stderr, "  -h or --help\n\tto print usage\n")
 		flag.VisitAll(func(f *flag.Flag) {
 			if len(f.Name) == 1 {
