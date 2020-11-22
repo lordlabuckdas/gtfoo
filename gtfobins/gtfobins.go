@@ -21,7 +21,7 @@ func getExploit(name string) gtfoStruct {
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusCode != 200 {
+	if resp.StatusCode == 404 {
 		fmt.Println("Queried binary not available!")
 		os.Exit(1)
 	}
