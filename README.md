@@ -8,15 +8,15 @@ go program to fetch gtfobins and lolbas
 
 ``` 
 $ git clone https://github.com/lordlabuckdas/gtfoo.git && cd gtfoo
-$ go build -ldflags="-s -w" main.go
-$ ./main <args>
+$ go build -ldflags="-s -w" gtfoo.go
+$ ./gtfoo <args>
 ```
 
 **to temporarily run it:**
 
 ``` 
 $ git clone https://github.com/lordlabuckdas/gtfoo.git && cd gtfoo
-$ go run main.go <args>
+$ go run gtfoo.go <args>
 ```
 
 ## note
