@@ -42,3 +42,7 @@ The project uses [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_co
 | code                       | _colorYellow_   |
 | code description           | _colorWhite_    |
 | errors                     | _colorRed_      |
+
+## communication
+
+You can reach the maintainers of the project and other contributors at  our [Discord Server](https://discord.gg/xaee3bRy) 
