@@ -45,4 +45,4 @@ The project uses [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_co
 
 ## communication
 
-You can reach the maintainers of the project and other contributors at  our [Discord Server](https://discord.gg/xaee3bRy) 
+You can reach the maintainers of the project and other contributors at  our [Discord Server](https://discord.gg/eBMSEBYgbb) 
