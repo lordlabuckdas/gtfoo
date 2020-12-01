@@ -43,6 +43,10 @@ The project uses [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_co
 | code description           | _colorWhite_    |
 | errors                     | _colorRed_      |
 
+## contributing
+
+Please see our [contributing guidelines](./contributing.md)
+
 ## communication
 
 You can reach the maintainers of the project and other contributors at  our [Discord Server](https://discord.gg/eBMSEBYgbb) 
