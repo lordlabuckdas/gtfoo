@@ -18,8 +18,7 @@ const banner =
 `░█▀▀░▀█▀░█▀▀░█▀█░█▀█
 ░█░█░░█░░█▀▀░█░█░█░█
 ░▀▀▀░░▀░░▀░░░▀▀▀░▀▀▀
-
-by 7phalange7 and lordlabuckdas`
+`
 
 func init() {
 	flag.StringVar(&gtfoSearch, "gtfo", "", "gtfobin query")
