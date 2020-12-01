@@ -16,19 +16,19 @@ func getExploit(name string) gtfoStruct {
 
 	resp, err := http.Get(url)
 	if err != nil {
-		fmt.Println("Error fetching data:", err)
+		fmt.Println(colorRed + "Error fetching data:" + colorReset, err)
 		os.Exit(1)
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode == 404 {
-		fmt.Println("Queried binary not available!")
+		fmt.Println(colorRed + "Queried binary not available!" + colorReset)
 		os.Exit(1)
 	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Println("Error reading data:", err)
+		fmt.Println(colorRed + "Error reading data:" + colorReset, err)
 		os.Exit(1)
 	}
 
@@ -43,15 +43,15 @@ func getExploit(name string) gtfoStruct {
 
 // returns formatted exploit
 func exploitFormatter(funcArray []function, funcName string) string {
-	funcString := colorCyan + funcName + colorReset + "\n\n" + funcDesc[funcName] + "\n\n"
+	funcString := colorCyan + funcName + colorReset + "\n\n" + colorGreen + funcDesc[funcName] + colorReset + "\n\n"
 
 	for i, s := range funcArray {
 
 		if s.Description != "" {
-			funcString += fmt.Sprintf("[%d] Description:\n%s\n", i+1, s.Description)
+			funcString += colorWhite + fmt.Sprintf("[%d] Description:\n%s\n\n", i+1, s.Description) + colorReset
 		}
 		if s.Code != "" {
-			funcString += "Code :\n" + s.Code + "\n"
+			funcString += colorYellow + "Code :\n" + s.Code + "\n" + colorReset
 		}
 	}
 	return funcString + "\n"

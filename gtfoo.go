@@ -14,8 +14,7 @@ var (
 	versionFlag bool
 )
 
-const banner = 
-`░█▀▀░▀█▀░█▀▀░█▀█░█▀█
+const banner = `░█▀▀░▀█▀░█▀▀░█▀█░█▀█
 ░█░█░░█░░█▀▀░█░█░█░█
 ░▀▀▀░░▀░░▀░░░▀▀▀░▀▀▀
 `
@@ -28,7 +27,7 @@ func init() {
 	// flag.StringVar(&lolbasSearch, "lolbas", "", "lolbas search term")
 	// flag.StringVar(&lolbasSearch, "l", "", "lolbas search term (shorthand flag)")
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "\n%s\n",banner)
+		fmt.Fprintf(os.Stderr, "\n%s\n", banner)
 		fmt.Fprintf(os.Stderr, "\nUsage: %s [options] [query]\n", os.Args[0])
 		fmt.Fprintf(os.Stderr, "  -h or --help\n\tto print usage\n")
 		flag.VisitAll(func(f *flag.Flag) {
