@@ -45,7 +45,7 @@ The project uses [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_co
 
 ## contributing
 
-Please see our [contributing guidelines](./contributing.md)
+Please see our [contributing guidelines](./CONTRIBUTING.md)
 
 ## communication
 
