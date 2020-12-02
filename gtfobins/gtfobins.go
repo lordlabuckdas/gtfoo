@@ -35,7 +35,7 @@ func getExploit(name string) gtfoStruct {
 	var gtfoExploit gtfoStruct
 	err = yaml.Unmarshal(body, &gtfoExploit)
 	if err != nil {
-		fmt.Println("Error parsing YAML file:", err)
+		fmt.Println(colorRed + "Error parsing YAML file:" + colorReset, err)
 		os.Exit(1)
 	}
 	return gtfoExploit
