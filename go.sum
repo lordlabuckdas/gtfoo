@@ -1,3 +1,5 @@
+github.com/lordlabuckdas/gtfoo/gtfobins v0.0.0-20201201101722-ef46511c0ef9 h1:OCXD4AYl6b20vZA+JGZCpd3Q0v3Nc1wLrZTtkLBu9Bc=
+github.com/lordlabuckdas/gtfoo/gtfobins v0.0.0-20201201101722-ef46511c0ef9/go.mod h1:MxA3LLoUhmsbM19VNoYC2JCSuiqdmYS/KweCa2aheg0=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.3.0 h1:clyUAQHOM3G0M3f5vQj7LuJrETvjVot3Z5el9nffUtU=
