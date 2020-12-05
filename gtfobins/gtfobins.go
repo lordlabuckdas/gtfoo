@@ -43,15 +43,15 @@ func getExploit(name string) gtfoStruct {
 
 // returns formatted exploit
 func exploitFormatter(funcArray []function, funcName string) string {
-	funcString := colorCyan + funcName + colorReset + "\n" + colorGreen + funcDesc[funcName] + colorReset + '\n'
+	funcString := colorCyan + funcName + colorReset + "\n" + colorGreen + funcDesc[funcName] + colorReset + "\n"
 
 	for i, s := range funcArray {
 
 		if s.Description !=  {
-			funcString += colorWhite + fmt.Sprintf("[%d] Description:%s", i+1, s.Description) + colorReset + '\n'
+			funcString += colorWhite + fmt.Sprintf("[%d] Description:\n%s", i+1, s.Description) + colorReset + "\n"
 		}
 		if s.Code !=  {
-			funcString += colorYellow + "Code:" + s.Code + colorReset + '\n'
+			funcString += colorYellow + "Code:" + s.Code + colorReset + "\n"
 		}
 	}
 	return funcString
