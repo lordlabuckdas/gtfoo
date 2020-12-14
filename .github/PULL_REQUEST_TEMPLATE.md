@@ -20,7 +20,7 @@ Hello there! Thanks for contributing to this repo, now in order get your PR revi
 **Explain your changes in detail**
 <!-- Remove this comment and answer here -->
 
-**Did you carefully checked your PR for bugs?**
+**Did you carefully check your PR for bugs?**
 - [ ] Yes
 - [ ] No
 - [ ] Not applicable
