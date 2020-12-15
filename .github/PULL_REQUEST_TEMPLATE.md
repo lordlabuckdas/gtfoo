@@ -1,4 +1,4 @@
-Hello there! Thanks for contributing to this repo, now in order get your PR reviewed, answer the questions below:
+<!-- Hello there! Thanks for contributing to this repo, now in order get your PR reviewed, answer the questions below: -->
 
 **Checks:**
 
