@@ -2,6 +2,8 @@
 
 go program to fetch gtfobins and lolbas
 
+**NOTE:** currently in dev
+
 ## setup
 
 **to build and compile to an executable:**
@@ -46,7 +48,3 @@ The project uses [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_co
 ## contributing
 
 Please see our [contributing guidelines](./CONTRIBUTING.md)
-
-## communication
-
-You can reach the maintainers of the project and other contributors at  our [Discord Server](https://discord.gg/eBMSEBYgbb) 
