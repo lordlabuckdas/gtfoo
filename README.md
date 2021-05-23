@@ -2,7 +2,12 @@
 
 go program to fetch gtfobins and lolbas
 
-**NOTE:** currently in dev
+## note
+
+*friendship ended with go, now rust is my best friend*
+
+* currently in dev
+* will probably rewrite this in rust
 
 ## setup
 
@@ -24,14 +29,10 @@ $ go run gtfoo.go <args>
 ## note
 
 * for now, use `go run` to execute the program
-
 * run `go fmt ./..` to fix indentation and format the `go` files
-
 * populate [gtfobins.go](./gtfobins/gtfobins.go) with helper functions
-
-* later, lolbas
-
-* don't upload the binary to the repo, we'll do it under releases later
+* upload the binary to this repo, you should not
+* put it up in releases, it will be
 
 ## color scheme
 
