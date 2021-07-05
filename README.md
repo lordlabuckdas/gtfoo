@@ -25,7 +25,7 @@ $ go run gtfoo.go <args>
 * run `go fmt ./..` to fix indentation and format the `go` files
 * populate [gtfobins.go](./gtfobins/gtfobins.go) with helper functions
 * upload the binary to this repo, you should not
-* put it up in releases, it will be
+* put up in releases, it will be
 
 ## color scheme
 
