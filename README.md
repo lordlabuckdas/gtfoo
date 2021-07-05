@@ -2,13 +2,6 @@
 
 go program to fetch gtfobins and lolbas
 
-## note
-
-*friendship ended with go, now rust is my best friend*
-
-* currently in dev
-* will probably rewrite this in rust
-
 ## setup
 
 **to build and compile to an executable:**
